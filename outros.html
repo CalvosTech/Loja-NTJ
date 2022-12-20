@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outros</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue',Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #292929;
+    color:aliceblue;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+h1{
+    color: #62aaed;
+}
+
+.barra {
+    border: 1px solid black;
+    border-radius: 30px;
+    /* padding-right: 0.5rem; */
+    /* padding-top: 0.1rem; */
+}
+
+input:focus{
+    outline: none;
+}
+
+input {
+    /* border: 1px solid black; */
+    /* text-decoration: none; */
+    margin: 0;
+    border-radius: 20px;
+    padding: 3px 8px;
+    padding-bottom: 7px;
+    width: 50vh;
+    background: none;
+    text-decoration-style: none;
+    border: 0;
+}
+
+.lupa {
+    height: 20px;
+    width: 1.3rem;
+    /* border: 2px solid black; */
+    margin: -5px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    padding: 0px;
+    background-color: #D1E0EE;
+    margin: 0;
+    height: 11.3vh;
+    z-index: 6;
+    box-shadow: -3px 2px 15px 1px #000000b5;
+}
+
+nav{
+    padding: 11vh 0 0 0;
+    margin: 0;
+    background-color: #292929;
+    color: rgb(147, 126, 126);
+}
+
+main{
+    background-color: #292929;
+    color: aliceblue;
+}
+
+.logo{
+    width: 5vw;
+}
+
+.carrinho{
+    width: 3.6vw;
+    right: 1vw;
+    top: 2vh;
+}
+
+.botao{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #62aaed;
+    border-radius: 22px;
+    color: white;
+    padding: 15px;
+    /* top: 0rem; */
+    width: 40px;
+    height: 40px;
+    left: 5.5rem;
+    text-align: center;
+    display: flex;
+    /* right: -5rem; */
+    font-size: large;
+    width: 5vw;
+}
+
+.botao > a{
+    color: white;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+main, header, nav, footer{
+    width: 100%;
+}
+
+.camisa{
+    font-size: larger;
+    padding: 35px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu{
+    margin-bottom: 0;
+    margin-top: 1vh;
+    position: relative;
+    display: flex;
+    list-style: none;
+    border-right: 0px;
+    /* padding: 17px; */
+    /* padding-bottom: 5px; */
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.menu li{
+    position: relative;
+    width: 100%;
+}
+
+/* Estilizando os Links */
+
+footer > p > div >a{
+    text-decoration:none;
+    text-decoration-style: none;
+    color: white;
+}
+
+.menu li a{
+    color: #ffffff;
+    display: block;
+    -webkit-transition: background 100ms ease-in-out, color 100ms ease-in-out;
+    transition: background 100ms ease-in-out, color 100ms ease-in-out;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #696767;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    /*-moz-box-shadow: 0 3px 10px 0 1;
+    -webkit-box-shadow: 0 3px 10px 0 1;*/
+}
+
+/* Fazendo o menu suspenso */
+
+.menu li ul{
+    display:none;
+}
+
+.ul-nav{
+    margin: 0;
+    padding: 1rem;
+}
+/* Exibindo o Submenu */
+
+.menu li:hover ul,ul{
+    display: flex;
+    text-align: center;
+
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.menu li ul{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    padding-left: 0;
+}
+
+.menu li ul li{
+    display:block;
+    width:100px;
+}
+
+.cabecalho{
+    width: 100%; 
+    /* height: 100vh; */
+    
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: initial;
+    font-size: 1.2em;
+}
+
+        footer > div > div > a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .principal{
+            margin-top: 5vh;
+            padding: 10px;
+            text-align: center;
+        }
+
+        div.imagens{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+
+        }
+
+        footer{
+            background-color: #292929;
+            color: aliceblue;
+            height: 24vh;
+        }
+
+        .linha1, .linha2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .linha1{
+            margin-bottom: 10vh;
+        }
+
+        img{
+            padding: 10px;
+        }
+
+        div.texto{
+    font-size: 1.1em;
+    text-decoration: none;
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.texto > p > a{
+    color: white;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+.insta{
+    text-align: center;
+}
+
+/*imagem*/
+.instagram{
+    width: 12%;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: none;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+#lateral{
+    align-items:center;
+    justify-content: center;
+    background-color: #D1E0EE;
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+    z-index: 1;
+    font-size: 1.1em;
+    list-style: none;
+    width: 0px;
+    transition: width 0.3s;
+    transition: all 0.4s;
+    z-index: 2;
+}
+
+#lateral a{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #292929;
+    margin: 10px;
+    align-items: center;
+    overflow: hidden;
+}
+
+#lateral a:hover{
+    color: white;
+    background-color: #292929;
+}
+
+    @media screen and (max-width: 750px){
+
+    *{
+        font-size: 1rem;
+    }
+
+    article, h1, .banner, div.linha1,div.linha2,div.texto,main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 15%;
+    }
+
+    .imagem{
+        flex-direction: column;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barra{
+        display: none;
+    }
+
+    input{
+        border: 1px solid black;
+        width: 80%;
+        height: 25px;
+    }
+
+    .carrinho{
+        width: 10%;
+    }
+
+    .botao{
+        position: relative;
+        /* display: flex; */
+        font-size: 0.9em;
+        padding: 15px;
+        text-align: center;
+        align-items: center;
+        width: 70px;
+        left: 5rem;
+    }
+
+    footer,div.texto{
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <!--<img src="" alt="">-->
+        <img alt="logo" class="logo" src="imagens/logo.png">
+        <div class="barra"><input type="text" name="" id="" placeholder="Pesquisar"><img src="./imagens/lupa.png" alt="lupa" class="lupa"></div> 
+        
+        <img alt="menu" class="carrinho" src="imagens/iconmenu.png" onclick="abrirmenu()">
+    </header>
+    
+    <nav>
+    
+        <div id="lateral">
+            <a id="lin" href="#" onclick="fecharmenu()">&times; Fechar</a>
+            <a href="home.html">Home</a>
+            <a id="lin" href="./cadastro.php">Cadastre-se</a>
+          </div>
+
+  <ul class="ul-nav">
+    <div class="cabecalho">
+        <ul class="menu">
+            <li>
+                <a href="#">Roupas</a>
+                <ul>
+                    <li><a href="camisas.html">Camisas</a></li>
+                    <li><a href="shorts.html">Shorts</a></li>
+                    <li><a href="polos.html">Polos</a></li>
+                </ul>
+          </li>
+          <li>
+            <a href="#">Marcas</a>
+            <ul>
+                <li><a href="nike.html">Nike</a></li>
+                    <li><a href="adidas.html">Adidas</a></li>
+                    <li><a href="puma.html">Puma</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#">Acessórios</a>
+          <ul>
+              <li><a href="bonés.html">Bonés</a></li>
+              <li><a href="meias.html">Meias</a></li>
+              <li><a href="outros.html">Outros</a></li>
+          </ul>
+    </div>
+</nav>
+    <main>
+        
+            <div class="linha1">
+                <div class="camisa">
+                    <img src="./imagens/outros/corrente-nike.jpeg">
+                    <p>Corrente Nike Dourada</p>
+                    <p>R$ 80,00</p>
+                    <p> <div class="botao"><a href="#">Comprar</a></div></p>
+                </div>
+
+                <div class="camisa">
+                    <img src="./imagens/outros/bola-adidas-conext21.jpg">
+                    <p>Bola Adidas Conext</p>
+                    <p>R$ 110,00</p>
+                    <p> <div class="botao"><a href="#">Comprar</a> </div></p>
+                </div>
+                <div class="camisa">
+                    <img src="./imagens/outros/tenispuma-casual.png">
+                    <p>Tênis Puma Casual</p>
+                    <p>R$ 100,00</p>
+                    <p> <div class="botao"><a href="#">Comprar</a></div></p></div>
+                </div>
+            </div>
+        
+            <div class="linha2">
+                <div class="camisa"><img src="./imagens/outros/bolsa-puma.jpg">
+                    <p>Bolsa Puma</p>
+                    <p>R$ 100,00</p>
+                    <p> <div class="botao"><a href="#">Comprar</a></div></p></div>
+
+                <div class="camisa">
+                    <img src="./imagens/outros/toca-adidas.jpg">
+                    <p>Toca Adidas</p>
+                    <p>R$ 40,00</p>
+                    <p> <div class="botao"><a href="#">Comprar</a></div></p></div>
+                <div class="camisa">
+                    <img src="./imagens/outros/luva-nike.jpg">
+                    <p>Luva Nike Preta</p>
+                    <p>R$ 50,00</p>
+                     <div class="botao"><a href="#">Comprar</a></div></div>
+                </div>
+            
+        </div>
+    </main>
+
+        <footer>
+            <hr>
+              <div class="texto">
+                
+              <p><a href="cadastro.php">Cadastre-se para receber <br> novidades</a> </p>
+              <p><div class="insta"><a href="https://www.instagram.com/ntj_imports_/" target="_blank">Rede Social <br> <img src="./imagens/instagram.png" alt="iconinstagram" class="instagram"></a></div></p>
+              <p><a href="sobre.html"> Sobre a NTJ</a></p>
+              
+              
+    </div>
+    </footer>
+
+    <script>
+            
+        function abrirmenu() {
+          var lateral = document.getElementById('lateral')
+          lateral = lateral.style.width = '25%';
+          lateral = lateral.style.zIndex = 1;
+
+          document.getElementById('lin').style.color = '#292929';
+        }
+
+        function fecharmenu() {
+          document.getElementById('lateral').style.width = '0px';
+        }
+
+    </script>
+
+</body>
+</html>
